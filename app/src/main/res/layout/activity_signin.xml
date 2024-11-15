@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signin">
+
+    <RelativeLayout
+        android:id="@+id/frame_148"
+        android:layout_width="320dp"
+        android:layout_height="614dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/panda"
+            android:layout_width="152dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="45dp"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="38dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/pandata" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="320dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/panda"
+            android:layout_marginTop="104dp"
+            android:text="Create your account"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="30dp"
+            android:text="Ready to become a trivia champion? Let's get started!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:id="@+id/txttagline"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="289dp"
+            android:layout_height="63dp"
+
+            android:layout_below="@+id/txttagline"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="18dp"
+            android:backgroundTint="#2196F3"
+            android:text="Continue with Email"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="137dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/button"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="92dp"
+            android:text="Or continue with"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btngoogle"
+            android:layout_width="289dp"
+            android:layout_height="63dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/white"
+            android:text="Continue with Google"
+          android:outlineAmbientShadowColor="#03A9F4"
+            android:textColor="#03A9F4" />
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

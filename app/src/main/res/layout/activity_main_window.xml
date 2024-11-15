@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainWindow">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout11"
+        android:layout_width="384dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/mainwindowphoto"
+            android:layout_width="57dp"
+            android:layout_height="59dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/img_5"
+            app:shapeAppearance="@style/cricular" />
+
+        <TextView
+            android:id="@+id/mainusname"
+            android:layout_width="151dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="7dp"
+            android:layout_toEndOf="@+id/mainwindowphoto"
+            android:text="Hello,"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="62dp"
+            android:layout_height="29dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="16dp"
+            android:background="#CD7F32"
+            android:text="100"
+
+            android:textAlignment="center" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="-19dp"
+            android:layout_toStartOf="@+id/textView4"
+            android:src="@drawable/img_14" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="384dp"
+        android:layout_height="526dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout11"
+        app:layout_constraintVertical_bias="0.478"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout10"
+        android:layout_width="411dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="80dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginBottom="22dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+
+                android:layout_above="@+id/textView5"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/home_24" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="2dp"
+                android:text="Home"
+                android:textColor="#2196F3"
+                android:textSize="25sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout8"
+            android:layout_width="80dp"
+            android:layout_height="110dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18dp"
+
+            android:layout_marginBottom="21dp"
+            android:layout_toEndOf="@+id/relativeLayout3">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView2"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_above="@+id/textView6"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/baseline_add_24" />
+
+            <TextView
+                android:id="@+id/textView6"
+
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-1dp"
+                android:text="Discover"
+                android:textColor="#2196F3"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout9"
+            android:layout_width="82dp"
+            android:layout_height="110dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="21dp"
+            android:layout_toEndOf="@+id/relativeLayout8">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_above="@+id/textView7"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="7dp"
+                android:src="@drawable/baseline_insert_chart_24" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-4dp"
+                android:text="Leaderboard"
+                android:textColor="#2196F3"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="110dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="23dp"
+            android:layout_toEndOf="@+id/relativeLayout9">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="47dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/textView8"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="29dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/img_15" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="2dp"
+                android:text="Achievement"
+                android:textColor="#2196F3"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
